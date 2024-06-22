@@ -1,4 +1,4 @@
-// File: /Users/kakamana/Desktop/Work/Projects/Nextjs/nextjs-with-strapi-to-create-blogs/app/layout.js
+// File: /Users/kakamana/Desktop/Work/Projects/Nextjs/nextjs-with-strapi-to-create-blogs/app/layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
