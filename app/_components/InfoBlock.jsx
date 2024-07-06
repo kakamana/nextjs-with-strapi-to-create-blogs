@@ -1,14 +1,24 @@
-import React from 'react'
+//import React from 'react'
+import ReactMarkdown from "react-markdown";
 
 const InfoBlock = ( {data} ) => {
-    const { headline, text, button, reversed } = data;
+  const { headline, text, showImageRight, imageSrc, button } = data;
+    //console.log(data)
+    //console.log(text)
+    console.log(data.button)
   return (
-    <div className={`info ${reversed ? "info--reversed" : ""}`}>
-        <img className='info__image' src='/assets/info-blocks/hero-experience.png' alt='' />
+    //<></>
+    <div className={`info ${showImageRight ? "info--reversed" : ""}`}>
+        <img 
+          className='info__image' 
+          // src={imageSrc || '/assets/info-blocks/hero-experience.png'} 
+          src={imageSrc || '/info-blocks/hero-experience.png'} 
+          alt='' 
+         />
         <div className="info__text">
             <h2 className='info__headline'>{headline}</h2>
-            {text}
-            {button}
+            <ReactMarkdown className="copy">{text}</ReactMarkdown>
+        {button}            
         </div>
     </div>
   )
