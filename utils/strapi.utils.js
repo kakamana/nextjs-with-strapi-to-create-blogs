@@ -1,5 +1,6 @@
 import axios from "axios";
 import Link from "next/link";
+import qs from "qs";
 
 const BASE_URL = process.env.STRAPI_URL || 'http://localhost:1337';
 
