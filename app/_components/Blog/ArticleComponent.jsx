@@ -12,7 +12,7 @@ const ArticleComponent = ({ component }) => {
       return <ImageTextComponent component={component} />;
     case "paragraph":
       return <ArticleParagraph paragraph={component} />;
-    case "landscape-image":
+    case "landscapeimage":
       return <LandscapeImage imageData={component} />;
     default:
       return <h1>Component not found</h1>;
