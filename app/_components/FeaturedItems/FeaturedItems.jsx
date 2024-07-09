@@ -2,6 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 import FeaturedArticle from './FeaturedArticle'
+import FeaturedEvent from './FeaturedEvent'
 
 const FeaturedItems = ({ headline, items, itemType = "article"}) => {
     const [itemNumber, setItemNumber] = useState(3);
@@ -24,7 +25,7 @@ const FeaturedItems = ({ headline, items, itemType = "article"}) => {
               if (itemType === "article") {
                 return <FeaturedArticle key={item.slug} article={item} />;
               } else {
-                //return <FeaturedEvent key={item.id} event={item} />;
+                return <FeaturedEvent key={item.id} event={item} />;
               }
             })}
           </div>
